@@ -2,8 +2,6 @@
 
 [The Introduction to What This Is](./introduction.md)
 
-# Complete List of Axioms, Definitions and Theorems
-
 [Complete List of Definitions](./defList.md)
 
 # The Books!
