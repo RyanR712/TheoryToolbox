@@ -1,0 +1,6 @@
+[book]
+authors = ["Ryan R"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Theoretically Useful: Ryan's Theory Toolkit"
