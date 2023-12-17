@@ -1,0 +1,2 @@
+Began reading on 12/26/2023. 
+**Motivation**: Someone explained the Yoneda Lemma at a mundane IEEE workshop and I was kind of enamored that we can prove things via connecting dots with lines like pushpins with thumbtacks.
