@@ -1,5 +1,6 @@
 {
     "cSpell.words": [
+        "Biconditional",
         "Crole",
         "Dostoyevsky",
         "Fyodor",
@@ -7,5 +8,5 @@
         "peaceiris",
         "Yoneda",
     ],
-    "editor.rulers": [150]
+    "editor.rulers": [125]
 }
