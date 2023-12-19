@@ -89,7 +89,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="introduction.html">The Introduction to What This Is</a></li><li class="chapter-item expanded affix "><a href="defList.html">Complete List of Definitions</a></li><li class="chapter-item expanded affix "><li class="part-title">The Books!</li><li class="chapter-item expanded "><a href="MendelsonIntroToLogic/meta.html"><strong aria-hidden="true">1.</strong> Introduction to Mathematical Logic 6th Edition, by Elliott Mendelson</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="MendelsonIntroToLogic/Chapter1/chapter_1.html"><strong aria-hidden="true">1.1.</strong> The Propositional Calculus</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="MendelsonIntroToLogic/Chapter1/chapter_1.1.html"><strong aria-hidden="true">1.1.1.</strong> Propositional Connectives: Truth Tables</a></li><li class="chapter-item expanded "><a href="MendelsonIntroToLogic/Chapter1/chapter_1.2.html"><strong aria-hidden="true">1.1.2.</strong> Tautologies</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="CroleCategoriesForTypes/chapter_2.html"><strong aria-hidden="true">2.</strong> Categories for Types, by Roy L. Crole</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="introduction.html">The Introduction to What This Is</a></li><li class="chapter-item expanded affix "><a href="defList.html">Complete List of Definitions</a></li><li class="chapter-item expanded affix "><li class="part-title">The Books!</li><li class="chapter-item expanded "><a href="MendelsonIntroToLogic/meta.html"><strong aria-hidden="true">1.</strong> Introduction to Mathematical Logic 6th Edition, by Elliott Mendelson</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="MendelsonIntroToLogic/Chapter1/chapter_1.html"><strong aria-hidden="true">1.1.</strong> The Propositional Calculus</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="MendelsonIntroToLogic/Chapter1/chapter_1.1.html"><strong aria-hidden="true">1.1.1.</strong> Propositional Connectives: Truth Tables</a></li><li class="chapter-item expanded "><a href="MendelsonIntroToLogic/Chapter1/chapter_1.2.html"><strong aria-hidden="true">1.1.2.</strong> Tautologies</a></li><li class="chapter-item expanded "><a href="MendelsonIntroToLogic/Chapter1/chapter_1.3.html"><strong aria-hidden="true">1.1.3.</strong> Adequate Sets of Connectives</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="CroleCategoriesForTypes/chapter_2.html"><strong aria-hidden="true">2.</strong> Categories for Types, by Roy L. Crole</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
@@ -182,7 +182,8 @@
 <div style="break-before: page; page-break-before: always;"></div><p>Truth-functional (adj.): &quot;Combinations in which the truth or falsity of the new sentence is determined by the truth or falsity of its component sentences.&quot; - Mendelson Chapter 1.1, page 1</p>
 <p>Negation: Operation represented by the symbol (¬). Changes a <strong>True</strong> to <strong>False</strong> and a <strong>False</strong> to <strong>True</strong>. Mendelson Chapter 1.1, page 1</p>
 <div style="break-before: page; page-break-before: always;"></div><p>Began reading on 12/01/2023. </p>
-<p><strong>Motivation</strong>: Logic is oddly fun to formalize and mess with in my head, but I ended up using a lot of the terms wrong. Recommended by my capstone SWE project sponsor.</p>
+<p><strong>Motivation</strong>: Logic is oddly fun to formalize and mess with in my head, but I ended up using a lot of the terms wrong. 
+Recommended by my capstone SWE project sponsor.</p>
 <p><strong>Objective</strong>: Get good.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="chapter-1-the-propositional-calculus"><a class="header" href="#chapter-1-the-propositional-calculus">Chapter 1: The Propositional Calculus</a></h1>
 <p>My understanding is that this chapter concerns the basics of propositional logic. Turns out that... 
@@ -245,7 +246,7 @@ contains only <strong>T</strong>s.&quot; Page 6</p>
 <p>Logically imply (verb): If and only if every truth value of the statement letters of <em>B</em> and <em>C</em> that makes <em>B</em> true also
 makes <em>C</em> true. <em>B</em> logically implies <em>C</em> and <em>C</em> is a logical consequence of <em>B</em>. Page 6</p>
 <p>Example: <em>A</em> ∧ <em>B</em> logically implies <em>A</em>, and <em>A</em> ∨ <em>B</em> is a logical consequences of <em>A</em>. Page 6</p>
-<p>Proposition 1.1: Page 7</p>
+<h1 id="proposition-11-page-7"><a class="header" href="#proposition-11-page-7">Proposition 1.1: Page 7</a></h1>
 <p>a. <em>B</em> logically implies <em>C</em> if and only if <em>B</em> ⇒ <em>C</em> is a tautology.</p>
 <p>b. <em>B</em> and <em>C</em> are logically equivalent if and only if <em>B</em> ⇔ <em>C</em> is a tautology.</p>
 <p>Contradictory (adj.): Statement form that is false for all truth values of its statement letters. Has only <strong>F</strong>s in the
@@ -255,16 +256,45 @@ final column of its truth table. Page 9</p>
 sentences. Page 9</p>
 <p>Logically false (adj.) Describes a sentence that comes from substituting each statement letter in a contradiction with 
 sentences. Page 10</p>
-<p>Proposition 1.2: Page 10</p>
+<h1 id="proposition-12-page-10"><a class="header" href="#proposition-12-page-10">Proposition 1.2: Page 10</a></h1>
 <p>If <strong>B</strong> is a tautology and (<strong>B</strong>⇒<strong>C</strong>) is a tautology, then <strong>C</strong> is a tautology.</p>
-<p>Proposition 1.3: Page 10</p>
+<h1 id="proposition-13-page-10"><a class="header" href="#proposition-13-page-10">Proposition 1.3: Page 10</a></h1>
 <p>If <strong>B</strong> is logically true, as in it is a result of substituting sentences for statement letters 
 in a tautology, then it is a tautology.</p>
-<p>Proposition 1.4: Page 10</p>
+<h1 id="proposition-14-page-10"><a class="header" href="#proposition-14-page-10">Proposition 1.4: Page 10</a></h1>
 <p>&quot;If <strong>C</strong>1 arises from <strong>B</strong>1 by substitution of <strong>C</strong> for one or more occurrences of <strong>B</strong>, then
 ((<strong>B</strong> ⇔ <strong>C</strong>) ⇒ (<strong>B</strong>1 ⇔ <strong>C</strong>1)) is a tautology. Hence, if <strong>B</strong> and <strong>C</strong> are logically equivalent,
 then so are <strong>B</strong>1 and <strong>C</strong>1.&quot;</p>
 <p>Polish notation: Prefix notation. Page 13</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="chapter-13-adequate-sets-of-connectives"><a class="header" href="#chapter-13-adequate-sets-of-connectives">Chapter 1.3: Adequate Sets of Connectives</a></h1>
+<p>&quot;Every statement form containing <em>n</em> statement letters generates a corresponding truth function of <em>n</em> arguments... 
+Logically equivalent forms generate the same truth function.&quot; Page 19</p>
+<h1 id="proposition-15-page-19"><a class="header" href="#proposition-15-page-19">Proposition 1.5: Page 19</a></h1>
+<p>Every truth function is generated by some statement form involving the propositional connectives ¬, ∧ and ∨.</p>
+<h1 id="corollary-16-page-21"><a class="header" href="#corollary-16-page-21">Corollary 1.6: Page 21</a></h1>
+<p>Every truth function can be generated by a statement form containing either:</p>
+<p>∧ and ¬, <strong>OR</strong></p>
+<p>∨ and ¬, <strong>OR</strong></p>
+<p>⇒ and ¬</p>
+<p>Joint denial: Operation represented by (↓). Page 21</p>
+<p>Joint denial truth table: Page 21</p>
+<p><img src="MendelsonIntroToLogic/Chapter1/./images/jointDenialTable.png" alt="Your joint has been denied" /></p>
+<p>Alternative denial: Operation represented by (|)</p>
+<p>Alternative denial truth table: Page 22</p>
+<p><img src="MendelsonIntroToLogic/Chapter1/./images/alternativeDenialTable.png" alt="ALT METAL SUCKS ANYWAY!" /></p>
+<h1 id="proposition-17-page-22"><a class="header" href="#proposition-17-page-22">Proposition 1.7: Page 22</a></h1>
+<p>The only binary propositional connectives that, alone, are adequate for creating every truth function, are joint denial and
+alternative denial.</p>
+<p>Literal: Statement letter or negation of a statement letter. Page 23</p>
+<p>Disjunctive normal form (dnf): A disjunction of &gt;= 1 disjuncts, where each disjunct is a conjunction of &gt;= 1 
+literals. Page 23</p>
+<p>Conjunctive normal form (cnf): A conjunction of &gt;= 1 conjuncts, where each conjunct is a disjunction of &gt;= 1
+literals. Page 23.</p>
+<p>Full cnf/dnf: A cnf or dnf is full if no conjunct/disjunct contains two literals with the same letter, AND
+if a letter that occurs in one conjunct/disjunct also occurs in all others. Page 24</p>
+<p>Satisfiable (adj.): A statement form is satisfiable if it is true for some assignment of truth values to its statement 
+letters. Page 24</p>
+<p>Blatant contradiction (noun): A cnf that contains some statement letter and that statement letter's negation as conjuncts.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="chapter-2"><a class="header" href="#chapter-2">Chapter 2</a></h1>
 
                     </main>
