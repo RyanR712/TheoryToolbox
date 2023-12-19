@@ -54,11 +54,11 @@ Statement letters: Letters that represent sentences and may take **T** or **F** 
 
 Statement form: Expression built from statement letters and valid applications of propositional connectives. Page 3-4
     
-    1. All statement letters (capital italic letters) and statement letters with numerical subscripts are statement forms.
+1. All statement letters (capital italic letters) and statement letters with numerical subscripts are statement forms.
 
-    2. If *B* and *C* are statement forms, so are ¬*B*, (*B*∧*C*), (*B*∨*C*), (*B*⇒*C*) and (*B*⇔*C*).
+2. If *B* and *C* are statement forms, so are ¬*B*, (*B*∧*C*), (*B*∨*C*), (*B*⇒*C*) and (*B*⇔*C*).
 
-    3. Only the expression determined by the above 1. and 2. are statement forms.
+3. Only the expression determined by the above 1. and 2. are statement forms.
 
 Truth function: "For every assignment of truth values T or F to the statement letters that occur
 in a statement form, there corresponds, by virtue of the truth tables for the
