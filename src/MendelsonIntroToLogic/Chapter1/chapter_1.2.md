@@ -7,3 +7,5 @@ Tautology: Statement form that is true regardless of the truth values of its sta
 "A statement form is a tautology if and only if its corresponding truth function takes only the value T,
 or equivalently, if, in its truth table, the column under the statement form
 contains only Ts." Page 6
+
+Law of the excluded middle: (A ∨ ¬A). Page 6
