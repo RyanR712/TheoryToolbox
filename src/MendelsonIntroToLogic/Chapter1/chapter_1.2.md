@@ -15,3 +15,9 @@ makes *C* true. *B* logically implies *C* and *C* is a logical consequence of *B
 
 Example: *A* ∧ *B* logically implies *A*, and *A* ∨ *B* is a logical consequences of *A*. Page 6
 
+Proposition 1.1
+
+a. *B* logically implies *C* if and only if *B* ⇒ *C* is a tautology.
+
+b. *B* and *C* are logically equivalent if and only if *B* ⇔ *C* is a tautology.
+
