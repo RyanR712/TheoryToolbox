@@ -3,8 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Theoretically Useful: Ryan&#x27;s Theory Toolkit</title>
-        <meta name="robots" content="noindex">
+        <title>Propositional Connectives: Truth Tables - Theoretically Useful: Ryan&#x27;s Theory Toolkit</title>
 
 
         <!-- Custom HTML head -->
@@ -13,21 +12,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff">
 
-        <link rel="icon" href="favicon.svg">
-        <link rel="shortcut icon" href="favicon.png">
-        <link rel="stylesheet" href="css/variables.css">
-        <link rel="stylesheet" href="css/general.css">
-        <link rel="stylesheet" href="css/chrome.css">
-        <link rel="stylesheet" href="css/print.css" media="print">
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
 
         <!-- Fonts -->
-        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
-        <link rel="stylesheet" href="fonts/fonts.css">
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" href="highlight.css">
-        <link rel="stylesheet" href="tomorrow-night.css">
-        <link rel="stylesheet" href="ayu-highlight.css">
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
 
@@ -36,7 +35,7 @@
     <div id="body-container">
         <!-- Provide site root to javascript -->
         <script>
-            var path_to_root = "";
+            var path_to_root = "../";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
         </script>
 
@@ -89,7 +88,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="introduction.html">The Introduction to What This Is</a></li><li class="chapter-item expanded affix "><a href="defList.html">Complete List of Definitions</a></li><li class="chapter-item expanded affix "><li class="part-title">The Books!</li><li class="chapter-item expanded "><a href="MendelsonIntroToLogic/meta.html"><strong aria-hidden="true">1.</strong> Introduction to Mathematical Logic 6th Edition, by Elliott Mendelson</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="MendelsonIntroToLogic/chapter_1.html"><strong aria-hidden="true">1.1.</strong> The Propositional Calculus</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="MendelsonIntroToLogic/chapter_1.1.html"><strong aria-hidden="true">1.1.1.</strong> Propositional Connectives: Truth Tables</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="CroleCategoriesForTypes/chapter_2.html"><strong aria-hidden="true">2.</strong> Categories for Types, by Roy L. Crole</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../introduction.html">The Introduction to What This Is</a></li><li class="chapter-item expanded affix "><a href="../defList.html">Complete List of Definitions</a></li><li class="chapter-item expanded affix "><li class="part-title">The Books!</li><li class="chapter-item expanded "><a href="../MendelsonIntroToLogic/meta.html"><strong aria-hidden="true">1.</strong> Introduction to Mathematical Logic 6th Edition, by Elliott Mendelson</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../MendelsonIntroToLogic/chapter_1.html"><strong aria-hidden="true">1.1.</strong> The Propositional Calculus</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../MendelsonIntroToLogic/chapter_1.1.html" class="active"><strong aria-hidden="true">1.1.1.</strong> Propositional Connectives: Truth Tables</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../CroleCategoriesForTypes/chapter_2.html"><strong aria-hidden="true">2.</strong> Categories for Types, by Roy L. Crole</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
@@ -145,7 +144,7 @@
                     <h1 class="menu-title">Theoretically Useful: Ryan&#x27;s Theory Toolkit</h1>
 
                     <div class="right-buttons">
-                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
 
@@ -174,45 +173,32 @@
 
                 <div id="content" class="content">
                     <main>
-                        <p><strong>&quot;Pain and suffering are always inevitable for a large intelligence and a deep heart.&quot;</strong> - Fyodor Dostoyevsky</p>
-<p>Therefore, via affirming the consequent, we can conclude that, by feeling pain and suffering, I can achieve a large intelligence and a deep heart.</p>
-<p>This is a catalogue of all the axioms, definitions, theorems, lemmas and corollaries I come across in the hope that one day, I might use one of them.</p>
-<p>And, a question to all you &quot;scientists&quot; out there; </p>
-<p>If Alan Turing is no longer alive, how is The Turing Test administered? </p>
-<div style="break-before: page; page-break-before: always;"></div><p>Truth-functional (adj.): &quot;Combinations in which the truth or falsity of the new sentence is determined by the truth or falsity of its component sentences.&quot; - Mendelson Chapter 1.1, page 1</p>
-<p>Negation: Operation represented by the symbol (¬). Changes a <strong>True</strong> to <strong>False</strong> and a <strong>False</strong> to <strong>True</strong>. Mendelson Chapter 1.1, page 1</p>
-<div style="break-before: page; page-break-before: always;"></div><p>Began reading on 12/01/2023. </p>
-<p><strong>Motivation</strong>: Logic is oddly fun to formalize and mess with in my head, but I ended up using a lot of the terms wrong. Recommended by my capstone SWE project sponsor.</p>
-<p><strong>Objective</strong>: Get good.</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="chapter-1-the-propositional-calculus"><a class="header" href="#chapter-1-the-propositional-calculus">Chapter 1: The Propositional Calculus</a></h1>
-<p>My understanding is that this chapter concerns the basics of propositional logic. Turns out that... 
-doesn't necessarily mean the basics are easy to wrap your head around.</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="chapter-11-propositional-connectives-truth-tables"><a class="header" href="#chapter-11-propositional-connectives-truth-tables">Chapter 1.1: Propositional Connectives: Truth Tables</a></h1>
+                        <h1 id="chapter-11-propositional-connectives-truth-tables"><a class="header" href="#chapter-11-propositional-connectives-truth-tables">Chapter 1.1: Propositional Connectives: Truth Tables</a></h1>
 <p>Truth-functional (adj.): &quot;Combinations in which the truth or falsity of the new sentence is determined by 
 the truth or falsity of its component sentences.&quot; - Page 1</p>
 <p>Negation: Operation represented by (¬). Changes a <strong>True</strong> to <strong>False</strong> and a <strong>False</strong> to <strong>True</strong>. Page 1</p>
 <p>Truth table: A table showing, for each combination of <strong>True</strong> or <strong>False</strong> given to the sentences, gives the output
 of the operation performed on them. Page 1</p>
 <p>Negation truth table: </p>
-<p><img src="MendelsonIntroToLogic/./images/negationTable.png" alt="Negation truth table goes here" /> Page 1</p>
+<p><img src="./images/negationTable.png" alt="Negation truth table goes here" /> Page 1</p>
 <p>Truth values: <strong>True</strong> or <strong>False</strong> in reference to the evaluation of an operation or the value given to a sentence. Note: 
 From here on, <strong>T</strong> = <strong>True</strong> and <strong>F</strong> = <strong>False</strong>. Page 1</p>
 <p>Conjunction: Operation represented by (∧). Page 1</p>
 <p>Conjunction truth table: </p>
-<p><img src="MendelsonIntroToLogic/./images/conjunctionTable.png" alt="Conjunction truth table goes here" /> Page 1</p>
+<p><img src="./images/conjunctionTable.png" alt="Conjunction truth table goes here" /> Page 1</p>
 <p>Conjuncts: Two or more sentences linked together by ∧. Page 1</p>
 <p>Disjunction: Operation represented by (∨). Page 2</p>
 <p>Disjunction truth table:</p>
-<p><img src="MendelsonIntroToLogic/./images/disjunctionTable.png" alt="Disjunction truth table goes here" /> Page 2</p>
+<p><img src="./images/disjunctionTable.png" alt="Disjunction truth table goes here" /> Page 2</p>
 <p>Disjuncts: Two or more sentences linked together by ∨. Page 2</p>
 <p>Conditional: Operation represented by (⇒). May be read as &quot;If A, then B,&quot; for sentences A and B. Page 2</p>
 <p>Antecedent: Sentence on the left side of ⇒.</p>
 <p>Consequent: Sentence on the right side of ⇒.</p>
 <p>Conditional truth table:</p>
-<p><img src="MendelsonIntroToLogic/./images/conditionalTable.png" alt="Conditional truth table goes here" /> Page 2</p>
+<p><img src="./images/conditionalTable.png" alt="Conditional truth table goes here" /> Page 2</p>
 <p>Biconditional: Operation represented by (⇔). May be read as &quot;A if and only if B,&quot; for sentences A and B. Page 3</p>
 <p>Biconditional truth table:</p>
-<p><img src="MendelsonIntroToLogic/./images/biconditionalTable.png" alt="Biconditional truth table goes here" /> Page 3</p>
+<p><img src="./images/biconditionalTable.png" alt="Biconditional truth table goes here" /> Page 3</p>
 <p>Propositional connectives: ¬, ∧, ∨, ⇒, ⇔. &quot;Any sentence built up by application of these connectives has a truth value that
 depends on the truth values of the constituent sentences.&quot; Page 3</p>
 <p>Statement letters: Letters that represent sentences and may take <strong>T</strong> or <strong>F</strong> as truth values. Page 3</p>
@@ -230,13 +216,18 @@ propositional connectives, a truth value for the statement form.&quot; May be re
 truth table. Page 4</p>
 <p>Principal connective: Propositional connective &quot;applied last in constructing the form.&quot; Page 5</p>
 <p>Atomic sentences: Sentences not composed of other sentences. Page 5</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="chapter-2"><a class="header" href="#chapter-2">Chapter 2</a></h1>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../MendelsonIntroToLogic/chapter_1.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
 
+                            <a rel="next prefetch" href="../CroleCategoriesForTypes/chapter_2.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
 
                         <div style="clear: both"></div>
                     </nav>
@@ -244,7 +235,13 @@ truth table. Page 4</p>
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../MendelsonIntroToLogic/chapter_1.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
 
+                    <a rel="next prefetch" href="../CroleCategoriesForTypes/chapter_2.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
             </nav>
 
         </div>
@@ -257,21 +254,16 @@ truth table. Page 4</p>
         </script>
 
 
-        <script src="elasticlunr.min.js"></script>
-        <script src="mark.min.js"></script>
-        <script src="searcher.js"></script>
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
 
-        <script src="clipboard.min.js"></script>
-        <script src="highlight.js"></script>
-        <script src="book.js"></script>
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
 
         <!-- Custom JS scripts -->
 
-        <script>
-        window.addEventListener('load', function() {
-            window.setTimeout(window.print, 100);
-        });
-        </script>
 
     </div>
     </body>
