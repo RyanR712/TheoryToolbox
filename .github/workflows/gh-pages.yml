@@ -1,4 +1,4 @@
-name: github pages
+name: Make book into website
 
 on:
   push:
