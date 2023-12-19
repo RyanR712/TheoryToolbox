@@ -11,4 +11,5 @@
         - [Propositional Connectives: Truth Tables](./MendelsonIntroToLogic/Chapter1/chapter_1.1.md)
         - [Tautologies](./MendelsonIntroToLogic/Chapter1/chapter_1.2.md)
         - [Adequate Sets of Connectives](./MendelsonIntroToLogic/Chapter1/chapter_1.3.md)
+        - [An Axiom System for the Propositional Calculus](./MendelsonIntroToLogic/Chapter1/chapter_1.4.md)
 - [Categories for Types, by Roy L. Crole](./CroleCategoriesForTypes/chapter_2.md)
