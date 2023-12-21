@@ -8,7 +8,7 @@
 
         <!-- Custom HTML head -->
         
-        <meta name="description" content="">
+        <meta name="description" content="∃Justice">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff">
 
@@ -30,6 +30,8 @@
 
         <!-- Custom theme stylesheets -->
 
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     </head>
     <body class="sidebar-visible no-js">
     <div id="body-container">
@@ -147,6 +149,9 @@
                         <a href="../../print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
+                        <a href="https://github.com/RyanR712/TheoryToolbox" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
 
                     </div>
                 </div>
@@ -180,16 +185,20 @@
 determine whether a given expression is a wf.</p>
 <p>Axioms: Some set of the wfs of a formal theory. </p>
 <p>Axiomatic formal theory: If one can effectively decide if a given wf is an axiom.</p>
-<p>Rules of inference: A finite set of relations among wfs that, for some wf <em>B</em> and another set of wfs <em>C</em>j s.t. j &gt; 0, 
-you can decide if the sets <em>C</em>j is in relation to some Rule of Inference <em>R</em>.</p>
-<p>Following from (verb): If <em>B</em>, with the above declarations, is in relation to <em>C</em>j as a result of <em>R</em>. We say &quot;<em>B</em> follows
-from <em>C</em>j by virtue of <em>R</em>.&quot;</p>
-<p>Direct consequence (noun): If <em>B</em>, with the above declarations, is in relation to <em>C</em>j as a result of <em>R</em>. Noun form of
-following from. We say &quot;<em>B</em> is a direct consequence of <em>C</em>j by virtue of <em>R</em>.&quot;</p>
-<p>A formal theory <em>F</em> is defined when the following conditions are satisfied.</p>
+<p>Rules of inference: A finite set of relations among wfs that, for some wf \( B \) 
+and another set of wfs \( C_j \ | \ j &gt; 0 \), 
+you can decide if the sets \( C_j \) is in relation to some Rule of Inference \( R \).</p>
+<p>Following from (verb): If \( B \), with the above declarations,
+is in relation to \( C_j \) as a result of \( R \). We say &quot;\( B \) follows
+from \( C_j \) by virtue of \( R \).&quot;</p>
+<p>Direct consequence (noun): If \( B \), with the above declarations, 
+is in relation to \( C_j \) as a result of \( R \). We say
+&quot;\( B \) is a direct consequence of \( C_j \) by virtue of \( R \).&quot;
+Noun form of following from.</p>
+<p>A formal theory \( F \) is defined when the following conditions are satisfied.</p>
 <ol>
 <li>
-<p>A countable set of symbols is given for <em>F</em>.</p>
+<p>A countable set of symbols is given for \( F \).</p>
 </li>
 <li>
 <p>There exist well-formed formulas based on the above set of symbols.</p>
@@ -201,70 +210,78 @@ following from. We say &quot;<em>B</em> is a direct consequence of <em>C</em>j b
 <p>There exist rules of inference from some wfs to other wfs.</p>
 </li>
 </ol>
-<p>Proof in <em>F</em>: A sequence of wfs that, for each step in the sequence, the step is either an axiom of a formal theory <em>F</em> or 
+<p>Proof in \( F \): A sequence of wfs that, for each step in the sequence,
+the step is either an axiom of a formal theory \( F \) or 
 a direct consequence of some of the preceding wfs by virtue of some inference rule. Page 27</p>
-<p>Theorem of <em>F</em>: A wf <em>B</em> that is the last step of a proof. We say this is a &quot;Proof of <em>B</em> in <em>F</em>.&quot; Page 27</p>
+<p>Theorem of \( F \): A wf \( B \) that is the last step of a proof. 
+We say this is a &quot;Proof of \( B \) in \( F \).&quot; Page 27</p>
 <p>Decidable theory: A theory for which you can effectively determine if there is proof. Page 28</p>
 <p>Undecidable theory: A theory for which you cannot effectively determine if there is a proof. Page 28</p>
 <p>&quot;From an intuitive standpoint, a decidable theory is one for which a machine
 can be devised to test wfs for theoremhood, whereas, for an undecidable
 theory, ingenuity is required to determine whether wfs are theorems.&quot; Page 28</p>
-<p>Consequence (noun) in <em>F</em>: A wf of a formal theory <em>F</em> is a consequence of a set Γ of wfs if for 
-a sequence of wfs, <em>B</em>1, ..., <em>B</em>k, each <em>B</em>i (i &gt; 0) is an axiom or
+<p>Consequence (noun) in \( F \): A wf of a formal theory \( F \) is a consequence of a set \( \Gamma \) of wfs if for 
+a sequence of wfs, \( B_1, ..., B_k \), each \( B_i \ | \ (i &gt; 0) \) is an axiom or
 a consequence of some rule of inference on the preceding wfs in the sequence. Page 28</p>
-<p>Deduction of <em>C</em> from Γ: Operation represented by (⊢). Γ ⊢ <em>C</em>. Read as &quot;<em>C</em> is a consequence of Γ.&quot;
-The above sequence performed for <em>C</em>, where <em>C</em> is <em>B</em>k. Page 28</p>
-<p>Hypotheses/Premisses of a proof: Elements of Γ in the above definition. Page 28</p>
-<p>&quot;If Γ is the empty set ∅, then ∅ ⊢ <em>C</em> if and only if <em>C</em> is a theorem. It is
-customary to omit the sign “∅” and simply write ⊢ <em>C</em>. Thus, ⊢ <em>C</em> is another way
-of asserting that <em>C</em> is a theorem.&quot; Page 28</p>
+<p>Deduction of \( B \) from \( \Gamma \):
+Operation represented by \( \vdash \). \( \Gamma \vdash C \). Read as &quot;\( C \) is a consequence of \( \Gamma \).&quot;
+The above sequence performed for \( C \), where \( C \) is \( B_k \). Page 28</p>
+<p>Hypotheses/Premisses of a proof: Elements of \( \Gamma \) in the above definition. Page 28</p>
+<p>&quot;If \( \Gamma \) is the empty set \( \emptyset \), then \( \emptyset \vdash C \) 
+if and only if \( C \) is a theorem. It is
+customary to omit the sign “\( \emptyset \)” and simply write \( \vdash C \). Thus, \( \vdash C \) is another way
+of asserting that \( C \) is a theorem.&quot; Page 28</p>
 <p>Properties of consequence:</p>
-<p>&quot;If Γ ⊆ Δ and Γ ⊢ <em>C</em>, then Δ ⊢ <em>C</em>.</p>
-<p>Γ ⊢ <em>C</em> if and only if there is a finite subset Δ of Γ such that Δ ⊢ <em>C</em>.</p>
-<p>If Δ ⊢ <em>C</em>, and for each <em>B</em> in Δ, Γ ⊢ <em>B</em>, then Γ ⊢ <em>C</em>.&quot; Page 28</p>
+<p>&quot;If \( \Gamma \subseteq \Delta \) and \( \Gamma \vdash C \), then \(\Delta \vdash C \).</p>
+<p>\( \Gamma \vdash C \) iff there is a finite subset \( \Delta \) of \( \Gamma \) such that \( \Delta \vdash C \).</p>
+<p>If \( \Delta \vdash C \), and for each \( B \) in \( \Delta \), \( \Gamma \vdash B \), then \( \Gamma \vdash C \).&quot;
+Page 28</p>
 <h3 id="formal-theory-definition-for-the-propositional-calculus-l-page-28"><a class="header" href="#formal-theory-definition-for-the-propositional-calculus-l-page-28">FORMAL THEORY DEFINITION FOR THE PROPOSITIONAL CALCULUS (L): Page 28</a></h3>
 <ol>
 <li>
-<p>Symbols = {¬, ⇒, (, ), {<em>A</em>1, ..., <em>A</em>i | i &gt; 0}}. The primitive connectives are ¬, ⇒. The letters <em>A</em>i are 
-statement letters.</p>
+<p>Symbols = {\( \neg, \Rightarrow, (, ), {A_1, ..., A_i | i &gt; 0}\)}. 
+The primitive connectives are \( \neg, \Rightarrow \). 
+The letters \( A_i \) are statement letters.</p>
 </li>
 <li>
 <p>All statement letters are the well formed forms. Statement forms connected by the primitive connectives are also
 statement forms.</p>
 </li>
 <li>
-<p>For statement forms <em>B</em>, <em>C</em> and <em>D</em>, of L, the following are L's axioms.
-A1: <em>B</em> ⇒ (<em>C</em> ⇒ <em>B</em>)
-A2: (<em>B</em> ⇒ (<em>C</em> ⇒ <em>D</em>)) ⇒ (<em>B</em> ⇒ <em>C</em>) ⇒ (<em>B</em> ⇒ <em>D</em>)
-A3: ((¬<em>C</em>) ⇒ ¬<em>B</em>) ⇒ ((¬<em>C</em>) ⇒ <em>B</em>) ⇒ <em>C</em></p>
+<p>For statement forms \( B, \ C \) and \( D \) of L, the following are L's axioms.</p>
+<p>A1: \(B \Rightarrow (C \Rightarrow B) \)</p>
+<p>A2: \( (B \Rightarrow (C \Rightarrow D)) \Rightarrow (B \Rightarrow C) \Rightarrow (B \Rightarrow D)\)</p>
+<p>A3: \( ((\neg C) \Rightarrow \neg B ) \Rightarrow ((\neg C) \Rightarrow B) \Rightarrow C \)</p>
 </li>
 <li>
 <p>The only inference rule of L is modus ponens (MP).</p>
 </li>
 </ol>
-<p>Modus Ponens: Operation represented by MP. For statement forms <em>B</em> and <em>C</em>, <em>B</em> ⊢ <em>C</em> and <em>B</em> ⇒ <em>C</em> ⊢ <em>C</em>. Page 29</p>
+<p>Modus Ponens: Operation represented by MP. 
+For statement forms \( B \) and \( C \), \( B \vdash C \) and \( B \Rightarrow C \vdash C \). Page 29</p>
 <p>L is an axiomatic theory because we can tell whether a given wf is of the form A1, A2 or A3. Page 29</p>
-<p>Connectives introduced by definition:
-D1: <em>B</em> ∧ <em>C</em> = ¬(<em>B</em> ⇒ ¬<em>C</em>)
-D2: <em>B</em> ∨ <em>C</em> = ¬<em>B</em> ⇒ <em>C</em>
-D3: <em>B</em> ⇔ <em>C</em> = (<em>B</em> ⇒ <em>C</em>) ∧ (<em>C</em> ⇒ <em>B</em>). Page 29</p>
+<p>Connectives introduced by definition.</p>
+<p>D1: \(B \land C = \neg(B \Rightarrow \neg C) \)</p>
+<p>D2: \( B \lor C = \neg B \Rightarrow C \)</p>
+<p>D3: \( B \Leftrightarrow C = (B \Rightarrow C) \land (C \Rightarrow B) \). Page 29</p>
 <h1 id="lemma-18-page-29"><a class="header" href="#lemma-18-page-29">Lemma 1.8: Page 29</a></h1>
-<p>⊢L <em>B</em> ⇒ <em>B</em></p>
+<p>\( \vdash_L \Rightarrow B \)</p>
 <h2 id="proposition-19-deduction-theorem-page-30"><a class="header" href="#proposition-19-deduction-theorem-page-30">Proposition 1.9 (DEDUCTION THEOREM): Page 30</a></h2>
-<p>If Γ is a set of wfs and <em>B</em> and <em>C</em> are wfs, and Γ, <em>B</em> ⊢ <em>C</em>, then Γ ⊢ <em>B</em> ⇒ <em>C</em>. 
-In particular, if <em>B</em> ⊢ <em>C</em>, then ⊢<em>B</em> ⇒ <em>C</em>.</p>
+<p>If Γ is a set of wfs and \( B \) and \( C \) are wfs, and \( \Gamma \), \( B \vdash C \), 
+\( \Gamma \vdash B \Rightarrow C \).
+In particular, if \( B \vdash C \), then \( \vdash_B \Rightarrow C \).</p>
 <h1 id="corollary-110-page-31"><a class="header" href="#corollary-110-page-31">Corollary 1.10: Page 31</a></h1>
-<p>If <em>B</em> ⇒ <em>C</em> and <em>C</em> ⇒ <em>D</em>, then <em>D</em> ⊢ <em>B</em> ⇒ <em>D</em> and</p>
-<p>If <em>B</em> ⇒ (<em>C</em> ⇒ <em>D</em>), then <em>C</em> ⊢ <em>B</em> ⇒ <em>D</em></p>
+<p>If \( B \Rightarrow C \) and \( C \Rightarrow D \), then \( D \vdash B \Rightarrow D \) and</p>
+<p>If \( B \Rightarrow (C \Rightarrow D ) \), then \( C \vdash B \Rightarrow D \).</p>
 <h1 id="lemma-111-page-31"><a class="header" href="#lemma-111-page-31">Lemma 1.11: Page 31</a></h1>
-<p>For any wfs <em>B</em> and <em>C</em>, the following are theorems of L.</p>
-<p>a. ¬¬<em>B</em> ⇒ <em>B</em></p>
-<p>b. <em>B</em> ⇒ ¬¬<em>B</em></p>
-<p>c. ¬<em>B</em> ⇒ (<em>B</em> ⇒ <em>C</em>)</p>
-<p>d. (¬<em>C</em> ⇒ ¬<em>B</em>) ⇒ (<em>B</em> ⇒ <em>C</em>)</p>
-<p>e. (<em>B</em> ⇒ <em>C</em>) ⇒ (¬<em>C</em> ⇒ ¬<em>B</em>)</p>
-<p>f. <em>B</em> ⇒ (¬<em>C</em> ⇒ ¬(<em>B</em> ⇒ <em>C</em>))</p>
-<p>g. (<em>B</em> ⇒ <em>C</em>) ⇒ ((¬<em>B</em> ⇒ <em>C</em>) ⇒ <em>C</em>)</p>
+<p>For any wfs \( B \) and \( C \), the following are theorems of L.</p>
+<p>a. \( \neg \neg B \Rightarrow B \)</p>
+<p>b. \( B \Rightarrow \neg \neg B \)</p>
+<p>c. \( \neg B \Rightarrow (B \Rightarrow C) \)</p>
+<p>d. ( (\neg C \Rightarrow \neg B ) \Rightarrow (B \Rightarrow C) \)</p>
+<p>e. \( (B \Rightarrow C ) \Rightarrow (\neg C \Rightarrow \neg B) \)</p>
+<p>f. \( B \Rightarrow ( \neg C \Rightarrow \neg (B \Rightarrow C)) \)</p>
+<p>g. \( (B \Rightarrow C) \Rightarrow (( \neg B \Rightarrow C) \Rightarrow C) \)</p>
 <h1 id="proposition-112-page-34"><a class="header" href="#proposition-112-page-34">Proposition 1.12: Page 34</a></h1>
 <p>Every theorem of L is a tautology.</p>
 <h1 id="lemma-113-page-34"><a class="header" href="#lemma-113-page-34">Lemma 1.13: Page 34</a></h1>
@@ -272,10 +289,11 @@ In particular, if <em>B</em> ⊢ <em>C</em>, then ⊢<em>B</em> ⇒ <em>C</em>.<
 <h1 id="proposition-114-page-35"><a class="header" href="#proposition-114-page-35">Proposition 1.14: Page 35</a></h1>
 <p>If a wf of L is a tautology, then it is a theorem of L.</p>
 <h1 id="corollary-115-page-35"><a class="header" href="#corollary-115-page-35">Corollary 1.15: Page 35</a></h1>
-<p>If <em>C</em> is an expression involving the signs ¬, ⇒, ∧, ∨ and ⇔ that is an abbreviation for a wf <em>B</em> of L, then <em>C</em> is a 
-tautology iff <em>B</em> is a theorem of L.</p>
+<p>If \( C \) is an expression involving the signs \(\neg, \ \Rightarrow, \ \land , \ \lor \) and \( \Leftrightarrow \) 
+that is an abbreviation for a wf \( B \) of L,
+then \( C \) is a tautology iff \( B \) is a theorem of L.</p>
 <h1 id="corollary-116"><a class="header" href="#corollary-116">Corollary 1.16</a></h1>
-<p>L is consistent, as in, there is no wf <em>B</em> such that both <em>B</em> and ¬<em>B</em> are theorems of L.</p>
+<p>L is consistent, as in, there is no wf \( B \) such that both \( B \) and \( \neg B \) are theorems of L.</p>
 
                     </main>
 

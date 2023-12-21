@@ -8,7 +8,7 @@
 
         <!-- Custom HTML head -->
         
-        <meta name="description" content="">
+        <meta name="description" content="∃Justice">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff">
 
@@ -30,6 +30,8 @@
 
         <!-- Custom theme stylesheets -->
 
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     </head>
     <body class="sidebar-visible no-js">
     <div id="body-container">
@@ -147,6 +149,9 @@
                         <a href="../../print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
+                        <a href="https://github.com/RyanR712/TheoryToolbox" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
 
                     </div>
                 </div>
@@ -175,36 +180,36 @@
                     <main>
                         <h1 id="chapter-16-other-axiomatizations"><a class="header" href="#chapter-16-other-axiomatizations">Chapter 1.6: Other Axiomatizations</a></h1>
 <p>L1: Page 39</p>
-<p>Primitive connectives: ∨ and ¬</p>
+<p>Primitive connectives: \( \lor \) and \( \neg \)</p>
 <p>Axioms: </p>
-<p><em>B</em> ∨ <em>B</em> ⇒ <em>B</em></p>
-<p><em>B</em> ⇒ <em>B</em> ∨ <em>C</em></p>
-<p><em>B</em> ∨ <em>C</em> ⇒ <em>C</em> ∨ <em>B</em></p>
-<p><em>C</em> ∨ <em>D</em> ⇒ ((<em>B</em> ∨ <em>C</em>) ⇒ (<em>B</em> ∨ <em>D</em>))</p>
+<p>\( B \lor B \Rightarrow B \)</p>
+<p>\(B \Rightarrow B \lor C \)</p>
+<p>\(B \lor C \Rightarrow C \lor B \)</p>
+<p>\( C \lor D \Rightarrow ((B \lor C) \Rightarrow (B \lor D)) \)</p>
 <p>Rule of inference: Modus Ponens</p>
 <p>Developed by Hilbert and Ackermann.</p>
 <p>L2: Page 39</p>
-<p>Primitive connectives: ∧ and ¬</p>
+<p>Primitive connectives: \( \land \) and \( \neg \)</p>
 <p>Axioms:</p>
-<p><em>B</em> ⇒ (<em>B</em> ∧ <em>B</em>)</p>
-<p><em>B</em> ∧ <em>C</em> ⇒ <em>B</em></p>
-<p>(<em>B</em> ⇒ <em>C</em>) ⇒ (¬(<em>C</em> ∧ <em>D</em>) ⇒ ¬(<em>D</em> ∧ <em>B</em>))</p>
+<p>\( B \Rightarrow (B \land B) \)</p>
+<p>\( B \land C \Rightarrow B \)</p>
+<p>\( (B \Rightarrow C) \Rightarrow ( \neg (C \land D) \Rightarrow \neg (D \land B)) \)</p>
 <p>Rule of inference: Modus Ponens</p>
 <p>Developed by Rosser.</p>
 <p>L3 develops our current L with a substitution rule. Page 39</p>
 <p>L4: Page 39</p>
-<p>Primitive connectives: ⇒, ∧, ∨, ¬</p>
+<p>Primitive connectives: \( \Rightarrow, \ \land, \ \lor \) and \( \neg \)</p>
 <p>Axioms:</p>
-<p><em>B</em> ⇒ (<em>C</em> ⇒ <em>B</em>)</p>
-<p>(<em>B</em> ⇒ (<em>C</em> ⇒ <em>D</em>)) ⇒ ((<em>B</em> ⇒ <em>C</em>) ⇒ (<em>B</em> ⇒ <em>D</em>))</p>
-<p><em>B</em> ∧ <em>C</em> ⇒ <em>B</em></p>
-<p><em>B</em> ∧ <em>C</em> ⇒ <em>C</em></p>
-<p><em>B</em> ⇒ (<em>C</em> ⇒ (<em>B</em> ∧ <em>C</em>))</p>
-<p><em>B</em> ⇒ (<em>B</em> ∨ <em>C</em>)</p>
-<p><em>C</em> ⇒ (<em>B</em> ∨ <em>C</em>)</p>
-<p>(<em>B</em> ⇒ <em>D</em>) ⇒ ((<em>C</em> ⇒ <em>D</em>) ⇒ (<em>B</em> ∨ <em>C</em> ⇒ <em>D</em>))</p>
-<p>(<em>B</em> ⇒ <em>C</em>) ⇒ ((<em>B</em> ⇒ ¬<em>C</em> ⇒ ¬<em>B</em>))</p>
-<p>¬¬<em>B</em> ⇒ <em>B</em></p>
+<p>\( B \Rightarrow (C \Rightarrow B) \)</p>
+<p>\( (B \Rightarrow (C \Rightarrow D)) \Rightarrow ((B \Rightarrow C) \Rightarrow (B \Rightarrow D)) \)</p>
+<p>\( B \land C \Rightarrow B \)</p>
+<p>\( B \land C \Rightarrow C \)</p>
+<p>\( B \Rightarrow (C \Rightarrow (B \land C)) \)</p>
+<p>\( B \Rightarrow (B \lor C) \)</p>
+<p>\( C \Rightarrow (B \lor C) \)</p>
+<p>\( (B \Rightarrow D) \Rightarrow ((C \Rightarrow D) \Rightarrow (B \lor C \Rightarrow D)) \)</p>
+<p>\( (B \Rightarrow C) \Rightarrow ((B \Rightarrow \neg C \Rightarrow \neg B)) \)</p>
+<p>\( \neg \neg B \Rightarrow B \)</p>
 <p>Rule of inference: Modus Ponens</p>
 <p>Developed by Kleene.</p>
 <p>Nicod in 1917 used only alternative denial as a rule of inference.</p>

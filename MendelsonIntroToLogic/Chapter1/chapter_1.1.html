@@ -8,7 +8,7 @@
 
         <!-- Custom HTML head -->
         
-        <meta name="description" content="">
+        <meta name="description" content="∃Justice">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff">
 
@@ -30,6 +30,8 @@
 
         <!-- Custom theme stylesheets -->
 
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     </head>
     <body class="sidebar-visible no-js">
     <div id="body-container">
@@ -147,6 +149,9 @@
                         <a href="../../print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
+                        <a href="https://github.com/RyanR712/TheoryToolbox" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
 
                     </div>
                 </div>
@@ -176,48 +181,53 @@
                         <h1 id="chapter-11-propositional-connectives-truth-tables"><a class="header" href="#chapter-11-propositional-connectives-truth-tables">Chapter 1.1: Propositional Connectives: Truth Tables</a></h1>
 <p>Truth-functional (adj.): &quot;Combinations in which the truth or falsity of the new sentence is determined by 
 the truth or falsity of its component sentences.&quot; - Page 1</p>
-<p>Negation: Operation represented by (¬). Changes a <strong>True</strong> to <strong>False</strong> and a <strong>False</strong> to <strong>True</strong>. Page 1</p>
-<p>Truth table: A table showing, for each combination of <strong>True</strong> or <strong>False</strong> given to the sentences, gives the output
+<p>Negation: Operation represented by \( \neg \).
+Changes a \( True \) to \( False \) and a \( False \) to \( True \). Page 1</p>
+<p>Truth table: A table showing, for each combination of \( True \) or \( False \) given to the sentences, gives the output
 of the operation performed on them. Page 1</p>
 <p>Negation truth table: </p>
 <p><img src="./images/negationTable.png" alt="Negation truth table goes here" /> Page 1</p>
-<p>Truth values: <strong>True</strong> or <strong>False</strong> in reference to the evaluation of an operation or the value given to a sentence. Note: 
-From here on, <strong>T</strong> = <strong>True</strong> and <strong>F</strong> = <strong>False</strong>. Page 1</p>
-<p>Conjunction: Operation represented by (∧). Page 1</p>
+<p>Truth values: \( True \) or \( False \) in reference to the evaluation of an operation or the value given to a sentence. 
+Note: From here on, \( T = True \) and \( F = False \). Page 1</p>
+<p>Conjunction: Operation represented by \( \land \). Page 1</p>
 <p>Conjunction truth table: </p>
 <p><img src="./images/conjunctionTable.png" alt="Conjunction truth table goes here" /> Page 1</p>
-<p>Conjuncts: Two or more sentences linked together by ∧. Page 1</p>
-<p>Disjunction: Operation represented by (∨). Page 2</p>
+<p>Conjuncts: Two or more sentences linked together by \( \land \). Page 1</p>
+<p>Disjunction: Operation represented by \( \lor \). Page 2</p>
 <p>Disjunction truth table:</p>
 <p><img src="./images/disjunctionTable.png" alt="Disjunction truth table goes here" /> Page 2</p>
-<p>Disjuncts: Two or more sentences linked together by ∨. Page 2</p>
-<p>Conditional: Operation represented by (⇒). May be read as &quot;If A, then B,&quot; for sentences A and B. Page 2</p>
-<p>Antecedent: Sentence on the left side of ⇒.</p>
-<p>Consequent: Sentence on the right side of ⇒.</p>
+<p>Disjuncts: Two or more sentences linked together by \( \lor \). Page 2</p>
+<p>Conditional: Operation represented by \( \Rightarrow \). May be read as &quot;If A, then B,&quot; for sentences A and B. Page 2</p>
+<p>Antecedent: Sentence on the left side of \( \Rightarrow \).</p>
+<p>Consequent: Sentence on the right side of \( \Rightarrow \).</p>
 <p>Conditional truth table:</p>
 <p><img src="./images/conditionalTable.png" alt="Conditional truth table goes here" /> Page 2</p>
-<p>Biconditional: Operation represented by (⇔). May be read as &quot;A if and only if B,&quot; for sentences A and B. Page 3</p>
+<p>Biconditional: Operation represented by \( \Leftrightarrow \). 
+May be read as &quot;A if and only if B,&quot; for sentences A and B. Page 3</p>
 <p>Biconditional truth table:</p>
 <p><img src="./images/biconditionalTable.png" alt="Biconditional truth table goes here" /> Page 3</p>
-<p>Propositional connectives: ¬, ∧, ∨, ⇒, ⇔. &quot;Any sentence built up by application of these connectives has a truth value that
+<p>Propositional connectives: \( \neg \), \( \land \), \( \lor \), \( \Rightarrow \), \( \Leftrightarrow \). 
+&quot;Any sentence built up by application of these connectives has a truth value that
 depends on the truth values of the constituent sentences.&quot; Page 3</p>
-<p>Statement letters: Letters that represent sentences and may take <strong>T</strong> or <strong>F</strong> as truth values. Page 3</p>
+<p>Statement letters: Letters that represent sentences and may take \( T \) or \( F \) as truth values. Page 3</p>
 <p>Statement form: Expression built from statement letters and valid applications of propositional connectives. Page 3-4</p>
 <ol>
 <li>
 <p>All statement letters (capital italic letters) and statement letters with numerical subscripts are statement forms.</p>
 </li>
 <li>
-<p>If <em>B</em> and <em>C</em> are statement forms, so are ¬<em>B</em>, (<em>B</em>∧<em>C</em>), (<em>B</em>∨<em>C</em>), (<em>B</em>⇒<em>C</em>) and (<em>B</em>⇔<em>C</em>).</p>
+<p>If \( B \) and \( C \) are statement forms, so are 
+\( \neg B, \ B \land C, \ B \lor C, \ B \Rightarrow C \) and \( B \Leftrightarrow C \).</p>
 </li>
 <li>
-<p>Only the expression determined by the above 1. and 2. are statement forms.</p>
+<p>Only the expressions determined by the above 1. and 2. are statement forms.</p>
 </li>
 </ol>
 <p>Truth function: &quot;For every assignment of truth values T or F to the statement letters that occur
 in a statement form, there corresponds, by virtue of the truth tables for the
 propositional connectives, a truth value for the statement form.&quot; May be represented accurately as a truth table. Page 4</p>
-<p>For <em>n</em> distinct letters in a statement form, there are 2^<em>n</em> possible assignments of truth values and 2^<em>n</em> rows in the
+<p>For \ ( n \) distinct letters in a statement form, there are \( 2^n \) possible assignments 
+of truth values and \( 2^n \) rows in the
 truth table. Page 4</p>
 <p>Principal connective: Propositional connective &quot;applied last in constructing the form.&quot; Page 5</p>
 <p>Atomic sentences: Sentences not composed of other sentences. Page 5</p>
