@@ -1,6 +1,11 @@
 [book]
+title = "Theoretically Useful: Ryan's Theory Toolkit"
 authors = ["Ryan R"]
+description = "∃Justice"
 language = "en"
 multilingual = false
 src = "src"
-title = "Theoretically Useful: Ryan's Theory Toolkit"
+
+[output.html]
+git-repository-url = "https://github.com/RyanR712/TheoryToolbox"
+mathjax-support = true

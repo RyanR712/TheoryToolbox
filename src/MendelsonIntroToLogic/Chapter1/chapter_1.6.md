@@ -2,17 +2,17 @@
 
 L1: Page 39
 
-Primitive connectives: ∨ and ¬
+Primitive connectives: \\( \lor \\) and \\( \neg \\)
 
 Axioms: 
 
-*B* ∨ *B* ⇒ *B*
+\\( B \lor B \Rightarrow B \\)
     
-*B* ⇒ *B* ∨ *C*
+\\(B \Rightarrow B \lor C \\)
 
-*B* ∨ *C* ⇒ *C* ∨ *B*
+\\(B \lor C \Rightarrow C \lor B \\)
 
-*C* ∨ *D* ⇒ ((*B* ∨ *C*) ⇒ (*B* ∨ *D*))
+\\( C \lor D \Rightarrow ((B \lor C) \Rightarrow (B \lor D)) \\)
 
 Rule of inference: Modus Ponens
 
@@ -20,15 +20,15 @@ Developed by Hilbert and Ackermann.
 
 L2: Page 39
 
-Primitive connectives: ∧ and ¬
+Primitive connectives: \\( \land \\) and \\( \neg \\)
 
 Axioms:
 
-*B* ⇒ (*B* ∧ *B*)
+\\( B \Rightarrow (B \land B) \\)
 
-*B* ∧ *C* ⇒ *B*
+\\( B \land C \Rightarrow B \\)
 
-(*B* ⇒ *C*) ⇒ (¬(*C* ∧ *D*) ⇒ ¬(*D* ∧ *B*))
+\\( (B \Rightarrow C) \Rightarrow ( \neg (C \land D) \Rightarrow \neg (D \land B)) \\)
 
 Rule of inference: Modus Ponens
 
@@ -38,29 +38,29 @@ L3 develops our current L with a substitution rule. Page 39
 
 L4: Page 39
 
-Primitive connectives: ⇒, ∧, ∨, ¬
+Primitive connectives: \\( \Rightarrow, \ \land, \ \lor \\) and \\( \neg \\)
 
 Axioms:
 
-*B* ⇒ (*C* ⇒ *B*)
+\\( B \Rightarrow (C \Rightarrow B) \\)
 
-(*B* ⇒ (*C* ⇒ *D*)) ⇒ ((*B* ⇒ *C*) ⇒ (*B* ⇒ *D*))
+\\( (B \Rightarrow (C \Rightarrow D)) \Rightarrow ((B \Rightarrow C) \Rightarrow (B \Rightarrow D)) \\)
 
-*B* ∧ *C* ⇒ *B*
+\\( B \land C \Rightarrow B \\)
 
-*B* ∧ *C* ⇒ *C*
+\\( B \land C \Rightarrow C \\)
 
-*B* ⇒ (*C* ⇒ (*B* ∧ *C*))
+\\( B \Rightarrow (C \Rightarrow (B \land C)) \\)
 
-*B* ⇒ (*B* ∨ *C*)
+\\( B \Rightarrow (B \lor C) \\)
 
-*C* ⇒ (*B* ∨ *C*)
+\\( C \Rightarrow (B \lor C) \\)
 
-(*B* ⇒ *D*) ⇒ ((*C* ⇒ *D*) ⇒ (*B* ∨ *C* ⇒ *D*))
+\\( (B \Rightarrow D) \Rightarrow ((C \Rightarrow D) \Rightarrow (B \lor C \Rightarrow D)) \\)
 
-(*B* ⇒ *C*) ⇒ ((*B* ⇒ ¬*C* ⇒ ¬*B*))
+\\( (B \Rightarrow C) \Rightarrow ((B \Rightarrow \neg C \Rightarrow \neg B)) \\)
 
-¬¬*B* ⇒ *B*
+\\( \neg \neg B \Rightarrow B \\)
 
 Rule of inference: Modus Ponens
 
