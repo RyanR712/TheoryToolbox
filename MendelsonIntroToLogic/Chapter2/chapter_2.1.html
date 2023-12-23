@@ -181,18 +181,19 @@
                         <h1 id="chapter-21-quantifiers"><a class="header" href="#chapter-21-quantifiers">Chapter 2.1: Quantifiers</a></h1>
 <p>Introducing words such as &quot;any,&quot; &quot;all,&quot; and &quot;some,&quot; brings more complexity into determining the truth of sentences. Page 45</p>
 <p>Special notations: Page 45</p>
-<p>P(<em>x</em>) asserts that <em>x</em> has property <em>P</em>.</p>
-<p>Universal quantifier: Operation represented by (∀<em>variable</em>). 
-For all <em>variable</em>, <em>variable</em> holds property <em>P</em>. Example, ∀(<em>x</em>)P(<em>x</em>).</p>
-<p>Existential quantifier: Operation represented by (∃<em>variable</em>). 
-For some <em>variable</em>, <em>variable</em> holds property <em>P</em>. Example, ∃(<em>x</em>)P(<em>x</em>).</p>
+<p>\( P(x) \) asserts that \( x \) has property \( P \).</p>
+<p>Universal quantifier: Operation represented by \( \forall \). 
+For all variable, variable holds property \( P \). Example, \( \forall x P(x) \).</p>
+<p>Existential quantifier: Operation represented by \( \exists \). 
+For some variable, variable holds property \( p \). Example, \( \exists x P(x) \).</p>
 <p>Horizontal lines in proofs mean &quot;Hence,&quot; or &quot;Therefore.&quot; Page 46</p>
 <p>Notation layout: Page 47</p>
-<p>Individual variables: x_1, x_2, ..., x_n, ...</p>
-<p>Individual constants: a_1, b_1, c_1, a_2, b_2, c_2, ... z_n</p>
-<p>Predicate letters: A^n_k for {n, k} &gt; 0 (This notation is hard to pull off here. Means A superscript n, A subscript k.)</p>
-<p>Function letters: f^n_k for {n, k} &gt; 0 (Same deal as above. Means f superscript n, f subscript k.)</p>
-<p>N for both predicate and function letters is the number of arguments, and k for both is an indexing number to distinguish
+<p>Individual variables: \( {x_1, x_2, ..., x_n, ... } \)</p>
+<p>Individual constants: \( {a_1, b_1, ..., a_2, b_2, ... a_n, b_n, ..., z_n } \)</p>
+<p>Predicate letters: \( A^n_k \) for \( {n, k} &gt; 0 \)</p>
+<p>Function letters: \( f^n_k \) for \( {n, k} &gt; 0 \)</p>
+<p>\( n \) for both predicate and function letters is the number of arguments,
+and \( k \) for both is an indexing number to distinguish
 predicates and functions with the same number of arguments.</p>
 <p>Terms: Page 47</p>
 <ol>
@@ -200,39 +201,43 @@ predicates and functions with the same number of arguments.</p>
 <p>Variables and individual constants are terms.</p>
 </li>
 <li>
-<p>If f^n_k is a function letter and t_1, t_2, ..., t_n are terms, then f^n_k(t_1, t_2, ..., t_n) is a term.</p>
+<p>If \( f^n_k \) is a function letter and \( {t_1, t_2, ..., t_n} \) are terms,
+then \( f^n_k(t_1, t_2, ..., t_n) \) is a term.</p>
 </li>
 <li>
 <p>An expression is a term iff it can be shown to be a term based on conditions 1 and 2.</p>
 </li>
 </ol>
-<p>Atomic formulas: If A^n_k is a predicate letter and t_1, t_2, ..., t_n are terms, A^n_k(t_1, t_2, ..., t_n) is an atomic
-formula. Page 47</p>
+<p>Atomic formulas: If \( A^n_k \) is a predicate letter and ( {t_1, t_2, ..., t_n} \) are terms,
+then \( A^n_k(t_1, t_2, ..., t_n) \) is an atomic formula. Page 47</p>
 <p>Wfs of quantification theory: Page 47</p>
 <ol>
 <li>
 <p>Every atomic formula is a wf.</p>
 </li>
 <li>
-<p>If <em>B</em> and <em>C</em> are wfs, and <em>y</em> is a variable, then (¬<em>B</em>), (<em>B</em> ⇒ <em>C</em>) and ((∀<em>y</em>)<em>B</em>) are wfs.</p>
+<p>If \( B \) and \( C \) are wfs, and \( y \) is a variable, 
+then \( \neg B \), \(B \Rightarrow C \) and \( (\forall y) B \) are wfs.</p>
 </li>
 <li>
 <p>An expression is a wf iff it is determined to be a wf by the above two conditions.</p>
 </li>
 </ol>
-<p>Scope: For ((∀<em>y</em>)<em>B</em>), <em>B</em> is the scope of the quantifier (∀<em>y</em>). &quot;Notice that <em>B</em> need
-not contain the variable <em>y</em>. In that case, we understand ((∀<em>y</em>)<em>B</em>) to mean the
-same thing as <em>B</em>.&quot; Page 48</p>
-<p>&quot;It was unnecessary for us to use the symbol ∃ as a primitive symbol
-because we can define existential quantification...&quot; ((∃<em>x</em>)<em>B</em>) =  ¬((∀<em>x</em>)(¬<em>B</em>)) Page 48</p>
-<p>Bound variable: A variable <em>x</em> is bound in wf <em>B</em> if it is in the universal or existential quantifiers, or it lies within
-the scope of the quantifier variable. Page 49</p>
-<p>Free variable: A variable <em>x</em> is free in wf <em>B</em> if it is not bound. Page 49</p>
+<p>Scope: For \( (\forall y) B \), \( B \) is the scope of the quantifier \( \forall y \).
+&quot;Notice that \( B \) need not contain the variable \( y \). In that case, we understand \( (\forall y) B \)
+to mean the same thing as \( B \).&quot; Page 48</p>
+<p>&quot;It was unnecessary for us to use the symbol \( \exists \) as a primitive symbol
+because we can define existential quantification...&quot; \( ((\exists x)B) = \neg((\forall x)(\neg B)) \) Page 48</p>
+<p>Bound variable: A variable \( x \) is bound in wf \( B \) if it is in the universal or existential quantifiers,
+or it lies within the scope of the quantifier variable. Page 49</p>
+<p>Free variable: A variable \( x \) is free in wf \( B \) if it is not bound. Page 49</p>
 <p>Make sure to check out the examples on page 49 in depth. They look interesting</p>
-<p>Free (bound) variable: A variable in wf <em>B</em> that has a free (bound) occurrence in <em>B</em>. &quot;Thus, a variable may be 
+<p>Free (bound) variable: A variable in wf \( B \) that has a free (bound) occurrence in \( B \). &quot;Thus, a variable may be 
 both free and bound in the same wf...&quot; Page 50</p>
-<p>Variables x_i_1, x_i_2, ..., x_i_k are marked as free variables in a wf <em>B</em> by writing <em>B</em> as <em>B</em>(x_i_1, ..., x_i_k). Page 50</p>
-<p><em>t</em> is free for x_i in <em>B</em> if no free occurrence of x_i in <em>B</em> is in the scope of any quantifier. Page 50</p>
+<p>Variables \( x_{i_1}, ..., x_{i_k} \) are marked as free variables in a wf \( B \) by writing \( B \)
+as \( B (x_{i_1}, ..., x_{i_k}) \). Page 50</p>
+<p>\( t \) is free for \( x_i \) in \( B \) if no free occurrence of \( x_i \) in \( B \)
+is in the scope of any quantifier. Page 50</p>
 
                     </main>
 
