@@ -68,7 +68,7 @@ Truth function: "For every assignment of truth values T or F to the statement le
 in a statement form, there corresponds, by virtue of the truth tables for the
 propositional connectives, a truth value for the statement form." May be represented accurately as a truth table. Page 4
 
-For \\ ( n \\) distinct letters in a statement form, there are \\( 2^n \\) possible assignments 
+For \\( n \\) distinct letters in a statement form, there are \\( 2^n \\) possible assignments 
 of truth values and \\( 2^n \\) rows in the
 truth table. Page 4
 
